@@ -1,0 +1,25 @@
+{
+  "name": "output-from-input",
+  "version": "1.0.0",
+  "description": "Create output from input",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmccann/output-from-input-action"
+  },
+  "keywords": [
+    "actions",
+    "node"
+  ],
+  "author": "jmccann",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build src/index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.4"
+  }
+}

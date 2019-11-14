@@ -1,0 +1,13 @@
+name: Output From Input
+description: Creates output from input
+author: jmccann
+inputs:
+  the_input:
+    description: Some kind of input
+    required: true
+outputs:
+  the_output:
+    description: Some kind of output
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
