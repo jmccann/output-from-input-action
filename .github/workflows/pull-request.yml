@@ -1,0 +1,20 @@
+name: Pull Request
+
+on:
+  pull_request:
+  push:
+    branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
+      - master          # triggers on pushes that contain changes in master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run-output-from-input
+        id: output-from-input
+        uses: ./
+        with:
+          the_input: test-input
+      - name: check output
+        run: |
+          [ "${{ steps.output-from-input.outputs.the_output }}" = "test" ]
