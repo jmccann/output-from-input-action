@@ -18,4 +18,4 @@ jobs:
           the_input: test-input
       - name: check output
         run: |
-          [ "${{ steps.output-from-input.outputs.the_output }}" = "test" ]
+          [ "${{ steps.output-from-input.outputs.the_output }}" = "test-input" ]
