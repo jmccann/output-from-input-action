@@ -17,7 +17,7 @@
     "build": "ncc build src/index.js"
   },
   "dependencies": {
-    "@actions/core": "^1.9.1"
+    "@actions/core": "^1.11.1"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.20.4"
